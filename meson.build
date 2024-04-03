@@ -2,7 +2,7 @@
 project('Aplicação', 'c')
 
 # Inicia as flags de compilação como um vetor vazio
-c_args = []
+c_args = ['-Wendif-labels']
 
 # Adiciona flags de compilação para o GCC e Clang
 cc = meson.get_compiler('c')
@@ -15,7 +15,9 @@ inc = include_directories('include', '/usr/local/include')
 
 # Importa os arquivos de código fonte
 app_src = files(
- 'src/main.c'
+ 'src/main.c',
+ 'src/do_professor.c',
+ 'src/do_aluno.c',
 )
 
 # Local para importar as dependencias
