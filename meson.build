@@ -17,7 +17,7 @@ inc = include_directories('include', '/usr/local/include')
 app_src = files(
  'src/main.c',
  'src/do_professor.c',
- 'src/do_aluno.c',
+ 'src/do_aluno.c'
 )
 
 # Local para importar as dependencias
